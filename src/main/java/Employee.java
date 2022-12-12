@@ -10,7 +10,7 @@ class getReportDetails {
         int iD = myObj.nextInt();
 
         System.out.println("Name: " + name);
-        System.out.println("ID: " + iD);
+        System.out.println("ID:  " + iD);
     }
 }
 
