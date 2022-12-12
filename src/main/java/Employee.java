@@ -14,7 +14,7 @@ class ShiftWorker extends Employee {
     int emp_payrollNum;
     int emp_salary;
 
-    ShiftWorker(int id, String name, int age, int salary, int payrollNum) {
+    ShiftWorker(int id, String name, int salary, int payrollNum) {
         super(id, name);
         emp_payrollNum = payrollNum;
         emp_salary = salary;
