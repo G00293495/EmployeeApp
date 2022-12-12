@@ -1,17 +1,38 @@
 import java.util.Scanner;  // Import the Scanner class
 
-class getReportDetails {
-    public static void main(String[] args) {
-        Scanner myObj = new Scanner(System.in);  // Create a Scanner object
-        System.out.println("Enter name and ID");
+class Employee {
+    String name;
+    int id;
 
-        String name = myObj.nextLine();  // Read user input
-
-        int iD = myObj.nextInt();
-
-        System.out.println("Name: " + name);
-        System.out.println("ID:  " + iD);
+    Employee(int iD, String name) {
+        this.name = name;
+        this.id = id;
     }
 }
 
+class ShiftWorker extends Employee {
+    int emp_payrollNum;
+    int emp_salary;
+
+    ShiftWorker(int id, String name, int age, int salary, int payrollNum) {
+        super(id, name);
+        emp_payrollNum = payrollNum;
+        emp_salary = salary;
+    }
+
+
+    void getReportDetails() {
+        System.out.println("Employee ID     :  " + id);
+        System.out.println("Employee Name   :  " + name);
+        System.out.println("Employee PayRollNumber    :  " + emp_payrollNum);
+        System.out.println("Employee Salary :  " + emp_salary);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Employee emp = new Employee(101, "Paddy Downey", 15.20, 22340);
+        emp.getReportDeatils();
+    }
+}
 
