@@ -1,27 +1,17 @@
-import java.net.IDN;
-import java.util.Scanner;
+import java.util.Scanner;  // Import the Scanner class
 
-     class Employee {
+class getReportDetails {
+    public static void main(String[] args) {
+        Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+        System.out.println("Enter name and ID");
 
-    String name;
-    double ID;
+        String name = myObj.nextLine();  // Read user input
 
+        int iD = myObj.nextInt();
 
-    public Employee(String name, double ID){
-        this.name = name;
-        this.ID = ID;
+        System.out.println("Name: " + name);
+        System.out.println("ID: " + iD);
     }
-
-
-         public String empStat(){
-        return "Name: " + name + "ID" + ID;
-    }
-
-    public static class MainEmployee{
-        public static void main(String[] args) {
-            Employee nub1 = new Employee("Paddy", 123456);
-            System.out.println(nub1);
-        }
-    }
-
 }
+
+
